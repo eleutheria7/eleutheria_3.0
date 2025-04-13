@@ -11,6 +11,7 @@ export default function Video() {
           allowFullScreen
         />
       </div>
+      <p>Comunidade Católica Colo de Deus</p>
     </div>
   );
 }
