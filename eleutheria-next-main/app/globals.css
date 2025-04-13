@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Scroll suave para toda a página */
+html {
+  scroll-behavior: smooth;
+}
+
+.my-swiper-button-prev,
+.my-swiper-button-next {
+  position: static !important; /* Remove posição absoluta padrão */
+  margin: 0 20px !important;
+  transform: translateY(-50%);
+  top: 50% !important;
+}
+
+.swiper-wrapper {
+  align-items: center; /* Centraliza verticalmente os slides */
+}
+
+/* Container personalizado */
+.custom-carousel-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
