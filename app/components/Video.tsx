@@ -11,7 +11,7 @@ export default function Video() {
           allowFullScreen
         />
       </div>
-      <p classeName= "text-center"> Comunidade Católica Colo de Deus</p>
+      <p className= "text-center"> Comunidade Católica Colo de Deus</p>
     </div>
   );
 }
