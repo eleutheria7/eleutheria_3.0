@@ -57,8 +57,8 @@ export default function Header() {
           <Image
             src="/assets/img/logo.png"
             alt="Logo Eleutheria"
-            width={50}
-            height={50}
+            width={70}
+            height={70}
           />
         </Link>
         {/* Conteúdo desktop */}
