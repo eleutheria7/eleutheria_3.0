@@ -87,7 +87,7 @@ export default function Header() {
           </button>
 
           {isOpen && (
-            <div className="flex flex-col gap-4 absolute top-full left-0 right-0 bg-white shadow-lg p-4 py-2 px-4 pb-8 text-gray-600 hover:bg-gray-100 text-2xl">
+            <div className="flex flex-col gap-4 top-full left-0 right-0 bg-white shadow-lg p-4 py-2 px-4 pb-8 text-gray-600 hover:bg-gray-100 text-2xl">
               {["Sobre", "Testemunhos", "Fotos", "Local", "Contato"].map(
                 (item) => (
                   <ScrollLink
