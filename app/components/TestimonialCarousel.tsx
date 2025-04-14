@@ -67,7 +67,7 @@ export default function TestimonialCarousel() {
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index} className="h-full">
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-lg p-6 mx-2 h-full min-h-[460px]">
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-lg p-6 mx-2 h-full min-h-[700px]">
                   <div className="flex flex-col items-center mb-4">
                     <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
                       <Image
