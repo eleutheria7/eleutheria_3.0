@@ -322,6 +322,7 @@ export default function FormularioPage() {
             name="entry."
             required
             options={[
+              { value: "", label: "Selecione", disabled: true, className: "text-gray-400" },
               { value: "Batismo", label: "Batismo" },
               { value: "1° Eucaristia", label: "1° Eucaristia" },
               { value: "Crisma", label: "Crisma" },
@@ -416,6 +417,7 @@ export default function FormularioPage() {
             name="entry."
             required
             options={[
+              { value: "", label: "Selecione", disabled: true, className: "text-gray-400" },
               { value: "Instagram", label: "Instagram" },
               { value: "Convite de Amigos", label: "Convite de Amigos" },
               { value: "Convite dos Pais", label: "Convite dos Pais" },
