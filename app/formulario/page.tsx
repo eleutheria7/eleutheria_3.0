@@ -296,7 +296,7 @@ export default function FormularioPage() {
           {/* Sacamentos */}
           <FormField
             label="Quais Sacramentos possui?:"
-            as="select"
+            as="radio"
             id="sacramentos"
             name="entry."
             required
