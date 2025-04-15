@@ -294,6 +294,7 @@ export default function FormularioPage() {
           />
 
           {/* Sacamentos */}
+        <div className="block mb-8">
           <FormField
             label="Quais Sacramentos possui?:"
             as="checkbox"
@@ -308,6 +309,7 @@ export default function FormularioPage() {
               { value: "Nenhum", label: "Nenhum" },
             ]}
           />
+        </div>
 
           {/* Paróquia */}
           <FormField
