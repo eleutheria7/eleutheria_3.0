@@ -154,8 +154,8 @@ export default function FormularioPage() {
             name="entry."
             required
             options={[
-              { value: "Masculino", label: "Solteiro" },
-              { value: "Feminino", label: "Casado" },
+              { value: "Masculino", label: "Masculino" },
+              { value: "Feminino", label: "Feminino" },
             ]}
           />
 
@@ -350,6 +350,7 @@ export default function FormularioPage() {
           <FormField
             label="Possui alguma alergia?"
             type="text"
+            rows={4}
             id="alergia"
             name="entry."
             required
@@ -382,6 +383,7 @@ export default function FormularioPage() {
           <FormField
             label="Outras restrições:"
             type="text"
+            rows={4}
             id="outras_restricoes"
             name="entry."
             required
