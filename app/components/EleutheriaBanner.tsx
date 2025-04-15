@@ -25,7 +25,7 @@ export default function EleutheriaBanner() {
           <p className="text-lg md:text-xl font-semibold mb-8">
             Dias 20, 21 e 22 de Junho de 2025
           </p>
-          <div className="bg-gray-800 p-4">
+          <div className="md:hidden">
             <a
               href="/formulario"
               className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition"
