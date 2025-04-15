@@ -382,7 +382,7 @@ export default function FormularioPage() {
           {/* Outras Restrições */}
           <FormField
             label="Outras restrições:"
-            type="text"
+            as="textarea"
             rows={4}
             id="outras_restricoes"
             name="entry."
