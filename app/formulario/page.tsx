@@ -309,6 +309,7 @@ export default function FormularioPage() {
               { value: "Matrimônio", label: "Matrimônio" },
               { value: "Nenhum", label: "Nenhum" },
             ]}
+            className="flex flex-col gap-2 ml-4" // <- garante um por linha e margem à esquerda
           />
          </div>
 
