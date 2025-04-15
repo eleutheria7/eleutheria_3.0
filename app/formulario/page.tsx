@@ -115,6 +115,7 @@ export default function FormularioPage() {
           className="space-y-6"
         >
           {/* Campo Nome Completo */}
+          <h3 className="text-lg font-semibold">Dados do Retirante</h3>
           <FormField
             label="Deus te chama pelo nome, qual é o seu? (Nome completo):"
             type="text"
@@ -179,7 +180,23 @@ export default function FormularioPage() {
                 .substring(0, 15); // Limita o tamanho máximo
             }}
           />
-
+          
+          {/* Estado Civil */}
+          <FormField
+            label="Estado Civil:"
+            as="select"
+            id="estado_civil"
+            name="entry."
+            required
+            options={[
+              { value: "Solteiro", label: "Solteiro" },
+              { value: "Casado", label: "Casado" },
+              { value: "Divorciado", label: "Divorciado" },
+              { value: "Viuvo", label: "Viuvo" },
+              { value: "Amasiado", label: "Amasiado" },
+            ]}
+          />
+          
           {/* WhatsApp Responsavel*/}
           <FormField
             label="WhatsApp de um responsável:"
@@ -288,6 +305,7 @@ export default function FormularioPage() {
           </div>
 
           {/* Religião */}
+          <h3 className="text-lg font-semibold">Dados Complementares</h3>
           <FormField
             label="Religião (se tiver): "
             type="text"
@@ -319,22 +337,6 @@ export default function FormularioPage() {
             id="paroquia"
             name="entry."
             required
-          />
-
-          {/* Estado Civil */}
-          <FormField
-            label="Estado Civil:"
-            as="select"
-            id="estado_civil"
-            name="entry."
-            required
-            options={[
-              { value: "Solteiro", label: "Solteiro" },
-              { value: "Casado", label: "Casado" },
-              { value: "Divorciado", label: "Divorciado" },
-              { value: "Viuvo", label: "Viuvo" },
-              { value: "Amasiado", label: "Amasiado" },
-            ]}
           />
 
           {/* Doenca Cronica */}
