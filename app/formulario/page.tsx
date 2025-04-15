@@ -349,7 +349,7 @@ export default function FormularioPage() {
           {/* Alergia */}
           <FormField
             label="Possui alguma alergia?"
-            type="text"
+            as="textarea"
             rows={4}
             id="alergia"
             name="entry."
