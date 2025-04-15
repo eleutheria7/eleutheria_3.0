@@ -197,30 +197,9 @@ export default function FormularioPage() {
               { value: "Amasiado", label: "Amasiado" },
             ]}
           />
-          
-          {/* WhatsApp Responsavel*/}
-          <FormField
-            label="WhatsApp de um responsável:"
-            as="input"
-            type="text"
-            id="whatsapp_responsavel"
-            name="entry."
-            required
-            inputMode="numeric"
-            pattern="^[-() 0-9]+$"
-            placeholder="Ex: (19) 99999-9999"
-            onInput={(e: React.FormEvent<HTMLInputElement>) => {
-              e.currentTarget.value = e.currentTarget.value
-                .replace(/\D/g, "") // Remove tudo que não é dígito
-                .replace(/(\d{2})(\d)/, "($1) $2") // Coloca parênteses around DDD
-                .replace(/(\d{5})(\d)/, "$1-$2") // Celular com 5 dígitos antes do hífen
-                .replace(/(-\d{4})\d+?$/, "$1") // Limita a 4 dígitos após o hífen
-                .substring(0, 15); // Limita o tamanho máximo
-            }}
-          />
 
           {/* Seção de Endereço */}
-          <h3 className="text-lg font-semibold mt-8">Endereço Completo</h3>
+          <h3 className="text-lg font-semibold">Endereço Completo</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Rua */}
             <FormField
@@ -332,7 +311,7 @@ export default function FormularioPage() {
             ]}
           />
 
-          {/* Religião */}
+          {/* Paróquia */}
           <FormField
             label="Paróquia/Comunidade:"
             type="text"
@@ -393,23 +372,6 @@ export default function FormularioPage() {
             required
           />
 
-          {/* Contato de Emergência */}
-          <FormField
-            label="Contato de emergência:"
-            type="text"
-            id="contato_emergencia"
-            name="entry."
-            required
-            onInput={(e: React.FormEvent<HTMLInputElement>) => {
-              e.currentTarget.value = e.currentTarget.value
-                .replace(/\D/g, "") // Remove tudo que não é dígito
-                .replace(/(\d{2})(\d)/, "($1) $2") // Coloca parênteses around DDD
-                .replace(/(\d{5})(\d)/, "$1-$2") // Celular com 5 dígitos antes do hífen
-                .replace(/(-\d{4})\d+?$/, "$1") // Limita a 4 dígitos após o hífen
-                .substring(0, 15); // Limita o tamanho máximo
-            }}
-          />
-
           {/* Como conheceu o Eleutheria? */}
           <FormField
             label="Como conheceu o Eleutheria?"
@@ -426,8 +388,41 @@ export default function FormularioPage() {
               { value: "Outro", label: "Outro" },
             ]}
           />
+          
+          {/* Contato de Emergência*/}
+          <h3 className="text-lg font-semibold">Em caso de emergência</h3>
+          <FormField
+            label="Contato de emergência:"
+            as="input"
+            type="text"
+            id="contato-emergencia"
+            name="entry."
+            required
+            inputMode="numeric"
+            pattern="^[-() 0-9]+$"
+            placeholder="Ex: (19) 99999-9999"
+            onInput={(e: React.FormEvent<HTMLInputElement>) => {
+              e.currentTarget.value = e.currentTarget.value
+                .replace(/\D/g, "") // Remove tudo que não é dígito
+                .replace(/(\d{2})(\d)/, "($1) $2") // Coloca parênteses around DDD
+                .replace(/(\d{5})(\d)/, "$1-$2") // Celular com 5 dígitos antes do hífen
+                .replace(/(-\d{4})\d+?$/, "$1") // Limita a 4 dígitos após o hífen
+                .substring(0, 15); // Limita o tamanho máximo
+            }}
+          />
 
+          {/* Nome emergência */}
+          <FormField
+            label="Nome do contato de emergência?"
+            type="text"
+            id="nome_emergência"
+            name="entry."
+            required
+          />
+          
+          
           {/* Autoriza o uso de imagem */}
+          <h3 className="text-lg font-semibold">Uso de imagem</h3>
           <FormField
             label="Autoriza o uso de imagem?"
             as="radio"
