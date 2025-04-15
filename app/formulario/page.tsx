@@ -189,6 +189,7 @@ export default function FormularioPage() {
             name="entry."
             required
             options={[
+              { value: "", label: "Selecione", disabled: true, className: "text-gray-400" },
               { value: "Solteiro", label: "Solteiro" },
               { value: "Casado", label: "Casado" },
               { value: "Divorciado", label: "Divorciado" },
