@@ -295,7 +295,7 @@ export default function FormularioPage() {
 
           {/* Sacamentos */}
           
-        <div className="block mb-8 flex flex-col gap-2">
+        <div className="flex flex-col mb-8 gap-2">
           <FormField
             label="Quais Sacramentos possui?:"
             as="checkbox"
