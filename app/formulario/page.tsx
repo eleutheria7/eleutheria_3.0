@@ -327,7 +327,8 @@ export default function FormularioPage() {
           {/* Doenca Cronica */}
           <FormField
             label="Possui alguma doença crônica?"
-            type="text"
+            as="textarea"
+            rows={4}
             id="doenca_cronica"
             name="entry."
             required
