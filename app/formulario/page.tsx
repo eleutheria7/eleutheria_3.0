@@ -295,7 +295,7 @@ export default function FormularioPage() {
 
           {/* Sacamentos */}
           
-        <div className="block mb-8">
+        <div className="block mb-12">
           <FormField
             label="Quais Sacramentos possui?:"
             as="checkbox"
@@ -305,7 +305,7 @@ export default function FormularioPage() {
             options={[
               { value: "Batismo", label: "Batismo" },
               { value: "1° Eucaristia", label: "1° Eucaristia" },
-              { value: "Crisma", label: "Crisma  " },
+              { value: "Crisma", label: "Crisma" },
               { value: "Matrimônio", label: "Matrimônio" },
               { value: "Nenhum", label: "Nenhum" },
             ]}
