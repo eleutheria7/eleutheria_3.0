@@ -377,6 +377,7 @@ export default function FormularioPage() {
           />
 
           {/* Como conheceu o Eleutheria? */}
+         <div className="mb-15">
           <FormField
             label="Como conheceu o Eleutheria?"
             as="select"
@@ -391,7 +392,7 @@ export default function FormularioPage() {
               { value: "Outro", label: "Outro" },
             ]}
           />
-          
+         </div>
           {/* Contato de Emergência*/}
           <h3 className="text-lg font-semibold">Em caso de emergência</h3>
           <FormField
@@ -415,6 +416,7 @@ export default function FormularioPage() {
           />
 
           {/* Nome emergência */}
+        <div className="mb-15">
           <FormField
             label="Nome do contato de emergência?"
             type="text"
@@ -422,6 +424,7 @@ export default function FormularioPage() {
             name="entry."
             required
           />
+        </div>
           
           
           {/* Autoriza o uso de imagem */}
