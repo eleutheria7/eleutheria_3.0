@@ -182,6 +182,7 @@ export default function FormularioPage() {
           />
           
           {/* Estado Civil */}
+         <div className="mb-15">
           <FormField
             label="Estado Civil:"
             as="select"
@@ -196,6 +197,7 @@ export default function FormularioPage() {
               { value: "Amasiado", label: "Amasiado" },
             ]}
           />
+         </div>
 
           {/* Seção de Endereço */}
           <h3 className="text-lg font-semibold">Endereço Completo</h3>
@@ -265,7 +267,7 @@ export default function FormularioPage() {
             />
 
             {/* CEP */}
-           <div className="mb-20">
+           <div className="mb-15">
             <FormField
               label="CEP"
               type="text"
@@ -295,8 +297,7 @@ export default function FormularioPage() {
             required
           />
 
-          {/* Sacamentos */}
-          
+        {/* Sacramentos */}
         <div className="block mb-8">
           <FormField
             label="Quais Sacramentos possui?:"
