@@ -265,6 +265,7 @@ export default function FormularioPage() {
             />
 
             {/* CEP */}
+           <div className="mb-20"
             <FormField
               label="CEP"
               type="text"
@@ -281,6 +282,7 @@ export default function FormularioPage() {
                   .substring(0, 9);
               }}
             />
+           </div>
           </div>
 
           {/* Religião */}
@@ -295,7 +297,7 @@ export default function FormularioPage() {
 
           {/* Sacamentos */}
           
-        <div className="block mb-12">
+        <div className="block mb-8">
           <FormField
             label="Quais Sacramentos possui?:"
             as="checkbox"
