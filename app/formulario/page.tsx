@@ -120,7 +120,7 @@ export default function FormularioPage() {
             label="Deus te chama pelo nome, qual é o seu? (Nome completo):"
             type="text"
             id="nome_completo"
-            name="entry."
+            name="entry.1625406627"
             required
           />
 
@@ -129,7 +129,7 @@ export default function FormularioPage() {
             label="RG:"
             type="number"
             id="rg"
-            name="entry."
+            name="entry.1190390295"
             required
             inputMode="numeric"
             pattern="[0-9.-]*"
@@ -141,7 +141,7 @@ export default function FormularioPage() {
             label="Data de Nascimento:"
             type="date"
             id="data_nascimento"
-            name="entry."
+            name="entry.262154056"
             required
             value={birthdate}
             onChange={handleDateChange}
@@ -152,7 +152,7 @@ export default function FormularioPage() {
             label="Sexo:"
             as="radio"
             id="sexo"
-            name="entry."
+            name="entry.875875820"
             required
             options={[
               { value: "Masculino", label: "Masculino" },
@@ -166,7 +166,7 @@ export default function FormularioPage() {
             as="input"
             type="text"
             id="whatsapp"
-            name="entry."
+            name="entry.1814162605"
             required
             inputMode="numeric"
             pattern="^[-() 0-9]+$"
@@ -187,7 +187,7 @@ export default function FormularioPage() {
             label="Estado Civil:"
             as="select"
             id="estado_civil"
-            name="entry."
+            name="entry.325339926"
             required
             options={[
               { value: "Solteiro", label: "Solteiro" },
@@ -207,7 +207,7 @@ export default function FormularioPage() {
               label="Rua"
               type="text"
               id="rua"
-              name="entry.rua"
+              name="entry.604883494"
               required
               placeholder="Ex: Rua das Flores"
             />
@@ -217,7 +217,7 @@ export default function FormularioPage() {
               label="Número"
               type="number"
               id="numero"
-              name="entry.numero"
+              name="entry.696160417"
               required
               min="1"
               placeholder="Ex: 123"
@@ -228,7 +228,7 @@ export default function FormularioPage() {
               label="Complemento"
               type="text"
               id="complemento"
-              name="entry.complemento"
+              name="entry.360566182"
               placeholder="Ex: Apt 45, Bloco B"
             />
 
@@ -237,7 +237,7 @@ export default function FormularioPage() {
               label="Bairro"
               type="text"
               id="bairro"
-              name="entry.bairro"
+              name="entry.1363635295"
               required
               placeholder="Ex: Centro"
             />
@@ -247,7 +247,7 @@ export default function FormularioPage() {
               label="Cidade"
               type="text"
               id="cidade"
-              name="entry.cidade"
+              name="entry.2084384625"
               required
               placeholder="Ex: Hortolândia"
             />
@@ -257,7 +257,7 @@ export default function FormularioPage() {
               label="Estado"
               as="select"
               id="estado"
-              name="entry.estado"
+              name="entry.833735459"
               required
               options={[
                 { value: "SP", label: "São Paulo" },
@@ -272,7 +272,7 @@ export default function FormularioPage() {
               label="CEP"
               type="text"
               id="cep"
-              name="entry.cep"
+              name="entry.513467057"
               required
               inputMode="numeric"
               pattern="[0-9]{5}-?[0-9]{3}"
@@ -293,7 +293,7 @@ export default function FormularioPage() {
             label="Religião (se tiver): "
             type="text"
             id="religiao"
-            name="entry."
+            name="entry.21587281"
             required
           />
 
@@ -303,7 +303,7 @@ export default function FormularioPage() {
             label="Quais Sacramentos possui?:"
             as="checkbox"
             id="sacramentos"
-            name="entry."
+            name="entry.1069811539"
             required
             options={[
               { value: "Batismo", label: "Batismo" },
@@ -320,7 +320,7 @@ export default function FormularioPage() {
             label="Paróquia/Comunidade:"
             type="text"
             id="paroquia"
-            name="entry."
+            name="entry.1843148734"
             required
           />
 
@@ -330,7 +330,7 @@ export default function FormularioPage() {
             as="textarea"
             rows={4}
             id="doenca_cronica"
-            name="entry."
+            name="entry.349133218"
             required
           />
 
@@ -340,7 +340,7 @@ export default function FormularioPage() {
             as="textarea"
             rows={4}
             id="alergia"
-            name="entry."
+            name="entry.1845817507"
             required
           />
 
@@ -350,7 +350,7 @@ export default function FormularioPage() {
             as="textarea"
             rows={4}
             id="medicamento_controlado"
-            name="entry."
+            name="entry.1319146195"
             required
           />
 
@@ -359,7 +359,7 @@ export default function FormularioPage() {
             label="Pode tomar analgésico?"
             as="radio"
             id="analgesico"
-            name="entry."
+            name="entry.88277559"
             required
             options={[
               { value: "Sim", label: "Sim" },
@@ -373,7 +373,7 @@ export default function FormularioPage() {
             as="textarea"
             rows={4}
             id="outras_restricoes"
-            name="entry."
+            name="entry.1924903226"
             required
           />
 
@@ -383,7 +383,7 @@ export default function FormularioPage() {
             label="Como conheceu o Eleutheria?"
             as="select"
             id="como_conheceu"
-            name="entry."
+            name="entry.1333170998"
             required
             options={[
               { value: "Instagram", label: "Instagram" },
@@ -401,7 +401,7 @@ export default function FormularioPage() {
             as="input"
             type="text"
             id="contato-emergencia"
-            name="entry."
+            name="entry.1985798356"
             required
             inputMode="numeric"
             pattern="^[-() 0-9]+$"
@@ -422,7 +422,7 @@ export default function FormularioPage() {
             label="Nome do contato de emergência?"
             type="text"
             id="nome_emergência"
-            name="entry."
+            name="entry.1574448511"
             required
           />
         </div>
@@ -434,11 +434,11 @@ export default function FormularioPage() {
             label="Autoriza o uso de imagem?"
             as="radio"
             id="uso_imagem"
-            name="entry."
+            name="entry.667484391"
             required
             options={[
-              { value: "Sim", label: "Sim" },
-              { value: "Nao", label: "Não" },
+              { value: "Sim, a comunicação pode tirar fotos e vídeos meus e publicar nas mídias sociais.", label: "Sim, a comunicação pode tirar fotos e vídeos meus e publicar nas mídias sociais." },
+              { value: "Não desejo que minha imagem seja registrada nas mídias sociais.", label: "Não desejo que minha imagem seja registrada nas mídias sociais." },
             ]}
           />
 
