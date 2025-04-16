@@ -62,7 +62,7 @@ export default function Header() {
           />
         </Link>
         {/* Conteúdo desktop */}
-        <div className="hidden md:flex space-x-8 text-2xl items-center">
+        <div className="hidden md:fixed flex space-x-8 text-2xl items-center">
           {["Sobre", "Testemunhos", "Fotos", "Local", "Contato"].map((item) => (
             <ScrollLink
               key={item}
