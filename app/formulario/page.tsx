@@ -265,7 +265,7 @@ export default function FormularioPage() {
             />
 
             {/* CEP */}
-           <div className="mb-20"
+           <div className="mb-20">
             <FormField
               label="CEP"
               type="text"
