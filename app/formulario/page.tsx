@@ -301,10 +301,11 @@ export default function FormularioPage() {
         <div className="block mb-8">
           <FormField
             label="Quais Sacramentos possui?:"
-            as="multiple"
+            as="select"
             id="sacramentos"
             name="entry.319303028"
             required
+            multiple={true}
             options={[
               { value: "Batismo", label: "Batismo" },
               { value: "1° Eucaristia", label: "1° Eucaristia" },
