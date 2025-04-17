@@ -301,7 +301,7 @@ export default function FormularioPage() {
         <div className="block mb-8">
           <FormField
             label="Quais Sacramentos possui?:"
-            as="radio"
+            type="checkbox"
             id="sacramentos"
             name="entry.319303028"
             required
