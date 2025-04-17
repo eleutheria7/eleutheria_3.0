@@ -305,7 +305,6 @@ export default function FormularioPage() {
             id="sacramentos"
             name="entry.319303028"
             required
-            multiple={true}
             options={[
               { value: "Batismo", label: "Batismo" },
               { value: "1° Eucaristia", label: "1° Eucaristia" },
