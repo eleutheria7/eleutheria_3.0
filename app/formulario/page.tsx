@@ -301,7 +301,7 @@ export default function FormularioPage() {
         <div className="block mb-8">
           <FormField
             label="Quais Sacramentos possui?:"
-            as="checkbox"
+            as="multiple"
             id="sacramentos"
             name="entry.319303028"
             required
@@ -363,7 +363,7 @@ export default function FormularioPage() {
             required
             options={[
               { value: "Sim", label: "Sim" },
-              { value: "Nao", label: "Não" },
+              { value: "Não", label: "Não" },
             ]}
           />
 
@@ -387,8 +387,8 @@ export default function FormularioPage() {
             required
             options={[
               { value: "Instagram", label: "Instagram" },
-              { value: "Convite de Amigos", label: "Convite de Amigos" },
-              { value: "Convite dos Pais", label: "Convite dos Pais" },
+              { value: "Convite de amigo", label: "Convite de Amigos" },
+              { value: "Convite dos pais", label: "Convite dos Pais" },
               { value: "Aviso na Missa", label: "Aviso na Missa" },
               { value: "Outro", label: "Outro" },
             ]}
@@ -437,8 +437,8 @@ export default function FormularioPage() {
             name="entry.341597136"
             required
             options={[
-              { value: "Sim, a comunicação pode tirar fotos e vídeos meus e publicar nas mídias sociais.", label: "Sim, a comunicação pode tirar fotos e vídeos meus e publicar nas mídias sociais." },
-              { value: "Não desejo que minha imagem seja registrada nas mídias sociais.", label: "Não desejo que minha imagem seja registrada nas mídias sociais." },
+              { value: "Sim, a comunicação pode tirar fotos e vídeos meus e publicar nas mídias sociais.", label: "Sim, autorizo." },
+              { value: "Não desejo que minha imagem seja registrada nas mídias sociais.", label: "Não Autorizo." },
             ]}
           />
 
