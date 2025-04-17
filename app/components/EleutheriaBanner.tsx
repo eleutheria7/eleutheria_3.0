@@ -28,7 +28,7 @@ export default function EleutheriaBanner() {
           <div className="">
             <a
               href="/formulario"
-              className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition"
+              className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition mb-8"
             >
               INSCREVA-SE
             </a>
