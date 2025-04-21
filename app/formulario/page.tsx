@@ -262,7 +262,6 @@ export default function FormularioPage() {
               required
               options={[
                 { value: "SP", label: "São Paulo" },
-                { value: "RJ", label: "Rio de Janeiro" },
                 // Adicione todos os estados
               ]}
             />
