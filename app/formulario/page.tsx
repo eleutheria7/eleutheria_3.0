@@ -80,7 +80,7 @@ export default function FormularioPage() {
             <strong>Data:</strong> 20, 21 e 22 de Junho/2025
           </p>
           <p>
-            <strong>Música Tema:</strong> Eis-me aqui– Colo de Deus
+            <strong>Música Tema:</strong> Eis-me aqui – Colo de Deus
           </p>
           <p>
             <strong>Local:</strong> Centro de Formação Religioso – Luiza G.
@@ -93,14 +93,14 @@ export default function FormularioPage() {
             <strong>Saída:</strong> 20/06/2025 às 19h00 - Paróquia Santa Luzia
           </p>
           <p>
-            <strong>Retorno:</strong> 22/06/2025 às 17h30, saída de Santa
+            <strong>Retorno:</strong> 22/06/2025 às 17h30 - Saída de Santa
             Bárbara d’Oeste
           </p>
           <p>
             <strong>Faixa etária:</strong> 14 a 30 anos
           </p>
           <p>
-            <strong>Valor:</strong> 1º Lote até 15/05, R$ 100
+            <strong>Valor:</strong> R$ 100 - 1° lote até 15/05
           </p>
         </div>
 
