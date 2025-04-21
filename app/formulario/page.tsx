@@ -303,7 +303,7 @@ export default function FormularioPage() {
             label="Bastismo"
             as="radio"
             id="batismo"
-            name="entry."
+            name="entry.319303028"
             required
             options={[
               { value: "Sim", label: "Sim" },
@@ -316,7 +316,7 @@ export default function FormularioPage() {
             label="1° Eucaristia"
             as="radio"
             id="eucaristia"
-            name="entry."
+            name="entry.1524559352"
             required
             options={[
               { value: "Sim", label: "Sim" },
@@ -329,7 +329,7 @@ export default function FormularioPage() {
             label="Crisma"
             as="radio"
             id="crisma"
-            name="entry."
+            name="entry.128676163"
             required
             options={[
               { value: "Sim", label: "Sim" },
@@ -342,16 +342,13 @@ export default function FormularioPage() {
             label="Matrimônio"
             as="radio"
             id="matrimonio"
-            name="entry."
+            name="entry.923626084"
             required
             options={[
               { value: "Sim", label: "Sim" },
               { value: "Não", label: "Não" },
             ]}
           />
-
-
-
 
           {/* Paróquia */}
           <FormField
