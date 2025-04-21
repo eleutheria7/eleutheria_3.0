@@ -297,23 +297,61 @@ export default function FormularioPage() {
             required
           />
 
-        {/* Sacramentos */}
-        <div className="block mb-8">
+          {/* Batismo */}
+          <h3 className="font-semibold">Preencha quais desses sacramentos você possui</h3>
           <FormField
-            label="Quais Sacramentos possui?:"
-            as="checkbox"
-            id="sacramentos"
-            name="entry.319303028"
+            label="Bastismo"
+            as="radio"
+            id="batismo"
+            name="entry."
             required
             options={[
-              { value: "Batismo", label: "Batismo" },
-              { value: "1° Eucaristia", label: "1° Eucaristia" },
-              { value: "Crisma", label: "Crisma" },
-              { value: "Matrimônio", label: "Matrimônio" },
-              { value: "Não possuo nenhum Sacramento", label: "Nenhum" },
+              { value: "Sim", label: "Sim" },
+              { value: "Não", label: "Não" },
             ]}
           />
-         </div>
+
+          {/* Eucaristia */}
+          <FormField
+            label="1° Eucaristia"
+            as="radio"
+            id="eucaristia"
+            name="entry."
+            required
+            options={[
+              { value: "Sim", label: "Sim" },
+              { value: "Não", label: "Não" },
+            ]}
+          />
+
+          {/* Crisma */}
+          <FormField
+            label="Crisma"
+            as="radio"
+            id="crisma"
+            name="entry."
+            required
+            options={[
+              { value: "Sim", label: "Sim" },
+              { value: "Não", label: "Não" },
+            ]}
+          />
+
+          {/* Matrimônio */}
+          <FormField
+            label="Matrimônio"
+            as="radio"
+            id="matrimonio"
+            name="entry."
+            required
+            options={[
+              { value: "Sim", label: "Sim" },
+              { value: "Não", label: "Não" },
+            ]}
+          />
+
+
+
 
           {/* Paróquia */}
           <FormField
