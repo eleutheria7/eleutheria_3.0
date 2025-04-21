@@ -117,22 +117,23 @@ export default function FormularioPage() {
           {/* Campo Nome Completo */}
           <h3 className="text-lg font-semibold">Dados do Retirante</h3>
           <FormField
-            label="Deus te chama pelo nome, qual é o seu? (Nome completo):"
+            label="Deus te chama pelo nome, qual é o seu?"
             type="text"
             id="nome_completo"
             name="entry.1200995469"
             required
+            placeholder="Nome Completo"
           />
 
           {/* Campo RG */}
           <FormField
             label="RG:"
-            type="number"
+            type="text"
             id="rg"
             name="entry.1085126047"
             required
-            inputMode="numeric"
-            pattern="[0-9.-]*"
+            inputMode="text"
+            pattern="[0-9a-zA-Z.-]*"
             placeholder="Ex: 12345678-9"
           />
 
