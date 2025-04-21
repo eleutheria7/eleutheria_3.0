@@ -81,7 +81,7 @@ export default function TestimonialCarousel() {
                       {testimonial.name}
                     </h4>
                   </div>
-                  <p className="text-gray-600 text-justify leading-relaxed">
+                  <p className="text-gray-600 text-justify leading-relaxed mx-auto">
                     {testimonial.text}
                   </p>
                 </div>
