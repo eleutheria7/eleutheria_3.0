@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     name: "Maria Natalia",
-    text: '"Eu me chamo Maria Natália, tenho 25 anos e o Eleutheria foi o meu primeiro retiro. Não participei de outros retiros por medo e insegurança, mas estava afastada da fé e decidi que era hora de mudar. E essa foi a melhor escolha! Conheci pessoas novas, me senti muito acolhida e acima de tudo, me reencontrei com Deus! Foi uma experiência infinitamente maravilhosa! Sinto que minha vida mudou completamente, após o retiro! "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    text: '"Eu me chamo Maria Natália, tenho 25 anos e o Eleutheria foi o meu primeiro retiro. Não participei de outros retiros por medo e insegurança, mas estava afastada da fé e decidi que era hora de mudar. E essa foi a melhor escolha! Conheci pessoas novas, me senti muito acolhida e acima de tudo, me reencontrei com Deus! Foi uma experiência infinitamente maravilhosa! Sinto que minha vida mudou completamente, após o retiro! "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     image: "/assets/img/Natalia.jpg",
   },
   {
