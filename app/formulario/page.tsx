@@ -111,8 +111,7 @@ export default function FormularioPage() {
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde4P_3rOrXZembrQToUQKjCPJH8TDyGiC6sI1U9ln8A_pYug/formResponse"
           method="POST"
-          target="hidden_iframe"
-          onSubmit={handleSubmit}
+          target="_blank"
           className="space-y-6"
         >
           {/* Campo Nome Completo */}
@@ -495,7 +494,6 @@ export default function FormularioPage() {
             Enviar
           </button>
         </form>
-        <iframe name="hidden_iframe" style={{ display: "none" }} />
 
         <div className="mt-6 items-center justify-center">
           <Link
