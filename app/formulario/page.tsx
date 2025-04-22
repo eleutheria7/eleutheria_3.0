@@ -512,14 +512,18 @@ export default function FormularioPage() {
             Enviar
           </button>
           {showPopup && (
-            <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 z-50">
-              <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md text-center">
-              <h2 className="text-xl font-bold text-green-600 mb-4">Formulário Enviado!</h2>
-              <p className="text-gray-700">Seu cadastro foi recebido com sucesso. Nos vemos no Eleutheria 2025!</p>
-              <button
-                className="mt-6 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
-                onClick={() => setShowPopup(false)}
-          >
+            <div className="fixed inset-0 z-40">
+              {/* Camada invisível para bloquear interações no fundo */}
+              <div className="absolute inset-0 bg-transparent cursor-not-allowed"></div>
+
+              {/* Popup em si */}
+              <div className="absolute top-8 right-8 bg-white border border-green-500 text-green-700 rounded-lg shadow-lg p-4 z-50">
+                <h2 className="text-lg font-bold mb-2">Formulário Enviado!</h2>
+                <p>Nos vemos no Eleutheria 2025!</p>
+                <button
+                  className="mt-3 px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                  onClick={() => setShowPopup(false)}
+            >
                 Fechar
               </button>
             </div>
