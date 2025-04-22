@@ -526,10 +526,10 @@ const handleClosePopup = () => {
           {showPopup && (
             <div className="fixed inset-0 z-40">
               {/* Camada invisível para bloquear interações no fundo */}
-              <div className="absolute inset-0 bg-transparent cursor-not-allowed"></div>
+              <div className="absolute inset-0 bg-opacity-50 cursor-not-allowed"></div>
 
               {/* Popup em si */}
-              <div className="absolute top-8 right-8 bg-white border border-green-500 text-green-700 rounded-lg shadow-lg p-4 z-50">
+              <div className="bg-white border border-green-500 text-green-700 rounded-lg shadow-lg p-4 z-50">
                 <h2 className="text-lg font-bold mb-2">Formulário Enviado!</h2>
                 <p>Nos vemos no Eleutheria 2025!</p>
                 <button
