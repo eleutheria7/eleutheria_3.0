@@ -530,6 +530,16 @@ const handleClosePopup = () => {
 
               {/* Popup em si */}
               <div className="relative bg-white border border-green-500 text-green-700 rounded-lg shadow-lg p-4 z-50 max-w-sm w-full mx-4">
+
+                  {/* Botão de Fechar "X" no canto superior direito */}
+                  <button
+                    onClick={handleClosePopup}
+                    className="absolute top-2 right-2 text-green-700 hover:text-green-900 text-lg font-bold"
+                    aria-label="Fechar"
+                  >
+                    ×
+                  </button>
+                
                 <h2 className="text-lg font-bold mb-2">Formulário Enviado!</h2>
                 <p>Nos vemos no Eleutheria 2025!</p>
 
@@ -538,17 +548,12 @@ const handleClosePopup = () => {
                   href="https://wa.me/19982305367"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-block text-sm text-green-700 underline hover:text-green-800 transition"
+                  className="mt-4 px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition inline-block"
                 >
                   Secretaria
                 </a>
                 
                 <button
-                  className="mt-3 px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
-                  onClick={handleClosePopup}
-            >
-                Fechar
-              </button>
             </div>
           </div>
           )}
