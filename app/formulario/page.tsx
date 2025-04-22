@@ -111,8 +111,8 @@ export default function FormularioPage() {
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde4P_3rOrXZembrQToUQKjCPJH8TDyGiC6sI1U9ln8A_pYug/formResponse"
           method="POST"
-          target="_blank"
-          className="space-y-6"
+          target="hidden_iframe"
+          onSubmit={handleSubmit}
         >
           {/* Campo Nome Completo */}
           <h3 className="text-lg font-semibold">Dados do Retirante</h3>
@@ -494,6 +494,7 @@ export default function FormularioPage() {
             Enviar
           </button>
         </form>
+        <iframe name="hidden_iframe" style={{ display: "none" }} />
 
         <div className="mt-6 items-center justify-center">
           <Link
