@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -12,6 +13,7 @@ export default function FormularioPage() {
   const [ageError, setAgeError] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const formRef = useRef<HTMLFormElement | null>(null);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
 
   const calculateAge = (birthDate: Date) => {
