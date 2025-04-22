@@ -63,7 +63,7 @@ export default function FormularioPage() {
      // Exibe o popup
   setShowPopup(true);
     setTimeout(() => {
-    (e.target as HTMLFormElement).submit();
+    e.currentTarget.submit();;
     // Remover ou modificar esse redirecionamento para outra ação se necessário
     // router.push("/success");  // Remover ou controlar de outra forma
   }, 1000);
