@@ -58,10 +58,14 @@ export default function FormularioPage() {
       setAgeError("Inscrição permitida apenas para maiores de 14 anos");
       return;
     }
+     // Exibe o popup
+  setShowPopup(true);
 
-    // Resto da lógica de envio do formulário
-    router.push("/success");
-  };
+  // Envia o formulário após um pequeno delay
+  setTimeout(() => {
+    (e.target as HTMLFormElement).submit();
+  }, 1000); // você pode ajustar o tempo se quiser
+};
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 flex items-center justify-center">
       <div className="bg-white shadow-xl rounded-lg p-6 w-full max-w-2xl">
@@ -111,7 +115,7 @@ export default function FormularioPage() {
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde4P_3rOrXZembrQToUQKjCPJH8TDyGiC6sI1U9ln8A_pYug/formResponse"
           method="POST"
-          target="_blank"
+          onSubmit={handleSubmit}
           className="space-y-6"
         >
           {/* Campo Nome Completo */}
