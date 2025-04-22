@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import FormField from "../components/FormField";
@@ -11,7 +12,6 @@ export default function FormularioPage() {
   const [birthdate, setBirthdate] = useState("");
   const [ageError, setAgeError] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-
 
   const calculateAge = (birthDate: Date) => {
     const today = new Date();
@@ -36,16 +36,14 @@ export default function FormularioPage() {
       const age = calculateAge(birthDate);
 
       if (age < 14) {
-        setAgeError(
-          "Você deve ter pelo menos 14 anos completos para se inscrever",
-        );
+        setAgeError("Você deve ter pelo menos 14 anos completos para se inscrever");
       } else {
         setAgeError("");
       }
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!birthdate) {
@@ -60,14 +58,28 @@ export default function FormularioPage() {
       setAgeError("Inscrição permitida apenas para maiores de 14 anos");
       return;
     }
-     // Exibe o popup
-  setShowPopup(true);
-    setTimeout(() => {
-    e.currentTarget.submit();;
-    // Remover ou modificar esse redirecionamento para outra ação se necessário
-    // router.push("/success");  // Remover ou controlar de outra forma
-  }, 1000);
-};
+
+    setShowPopup(true);
+
+    setTimeout(async () => {
+      const form = e.target as HTMLFormElement;
+      const formData = new FormData(form);
+
+      try {
+        await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          mode: "no-cors", // Necessário para Google Forms
+        });
+
+        console.log("Formulário enviado com sucesso.");
+        // Aqui você pode manter o usuário na tela ou mostrar uma confirmação visual
+
+      } catch (error) {
+        console.error("Erro ao enviar formulário:", error);
+      }
+    }, 1000);
+  };
     
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 flex items-center justify-center">
@@ -501,10 +513,10 @@ export default function FormularioPage() {
             Enviar
           </button>
           {showPopup && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
-              <h3 className="text-xl font-bold text-green-600 mb-4">Formulário enviado!</h3>
-              <p className="text-gray-700">Redirecionando para a tela de confirmação...</p>
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-white p-6 rounded shadow-lg text-center">
+              <h3 className="text-xl font-bold mb-4">Formulário enviado!</h3>
+              <p>Obrigado por se inscrever!</p>
             </div>
           </div>
           )}
