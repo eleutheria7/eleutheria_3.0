@@ -62,6 +62,12 @@ export default function FormularioPage() {
     }
      // Exibe o popup
   setShowPopup(true);
+    setTimeout(() => {
+    (e.target as HTMLFormElement).submit();
+    // Remover ou modificar esse redirecionamento para outra ação se necessário
+    // router.push("/success");  // Remover ou controlar de outra forma
+  }, 1000);
+};
     
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 flex items-center justify-center">
