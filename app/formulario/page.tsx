@@ -113,6 +113,7 @@ export default function FormularioPage() {
           method="POST"
           target="hidden_iframe"
           onSubmit={handleSubmit}
+          className="space-y-6"
         >
           {/* Campo Nome Completo */}
           <h3 className="text-lg font-semibold">Dados do Retirante</h3>
