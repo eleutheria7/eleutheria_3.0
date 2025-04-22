@@ -10,6 +10,8 @@ export default function FormularioPage() {
   const router = useRouter();
   const [birthdate, setBirthdate] = useState("");
   const [ageError, setAgeError] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+
 
   const calculateAge = (birthDate: Date) => {
     const today = new Date();
@@ -497,6 +499,15 @@ export default function FormularioPage() {
           >
             Enviar
           </button>
+          {showPopup && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+              <h3 className="text-xl font-bold text-green-600 mb-4">Formulário enviado!</h3>
+              <p className="text-gray-700">Redirecionando para a tela de confirmação...</p>
+            </div>
+          </div>
+          )}
+
         </form>
 
         <div className="mt-6 items-center justify-center">
