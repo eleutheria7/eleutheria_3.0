@@ -11,6 +11,8 @@ export default function FormularioPage() {
   const [birthdate, setBirthdate] = useState("");
   const [ageError, setAgeError] = useState("");
   const [showPopup, setShowPopup] = useState(false);
+  const formRef = useRef<HTMLFormElement | null>(null);
+
 
   const calculateAge = (birthDate: Date) => {
     const today = new Date();
@@ -43,42 +45,49 @@ export default function FormularioPage() {
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!birthdate) {
-      setAgeError("Por favor, insira sua data de nascimento");
-      return;
-    }
+  if (!birthdate) {
+    setAgeError("Por favor, insira sua data de nascimento");
+    return;
+  }
 
-    const birthDate = new Date(birthdate);
-    const age = calculateAge(birthDate);
+  const birthDate = new Date(birthdate);
+  const age = calculateAge(birthDate);
 
-    if (age < 14) {
-      setAgeError("Inscrição permitida apenas para maiores de 14 anos");
-      return;
-    }
+  if (age < 14) {
+    setAgeError("Inscrição permitida apenas para maiores de 14 anos");
+    return;
+  }
 
-    setShowPopup(true);
+  // Enviar os dados do formulário
+  const form = e.target as HTMLFormElement;
+  const formData = new FormData(form);
 
-    setTimeout(async () => {
-      const form = e.target as HTMLFormElement;
-      const formData = new FormData(form);
+  try {
+    await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      mode: "no-cors", // Necessário para Google Forms
+    });
 
-      try {
-        await fetch(form.action, {
-          method: form.method,
-          body: formData,
-          mode: "no-cors", // Necessário para Google Forms
-        });
+    console.log("Formulário enviado com sucesso.");
+    setShowPopup(true);  // Mostrar o popup de confirmação
+  } catch (error) {
+    console.error("Erro ao enviar formulário:", error);
+  }
+};
 
-        console.log("Formulário enviado com sucesso.");
-        // Aqui você pode manter o usuário na tela ou mostrar uma confirmação visual
+const handleClosePopup = () => {
+  setShowPopup(false);
+  setFormSubmitted((prev) => !prev); // Força a re-renderização
 
-      } catch (error) {
-        console.error("Erro ao enviar formulário:", error);
-      }
-    }, 1000);
-  };
+  // Limpar o formulário
+  if (formRef.current) {
+    formRef.current.reset();
+  }
+};
+
     
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 flex items-center justify-center">
@@ -127,6 +136,7 @@ export default function FormularioPage() {
         </h2>
 
         <form
+          ref={formRef}
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde4P_3rOrXZembrQToUQKjCPJH8TDyGiC6sI1U9ln8A_pYug/formResponse"
           method="POST"
           onSubmit={handleSubmit}
@@ -522,7 +532,7 @@ export default function FormularioPage() {
                 <p>Nos vemos no Eleutheria 2025!</p>
                 <button
                   className="mt-3 px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
-                  onClick={() => setShowPopup(false)}
+                  onClick={handleClosePopup}
             >
                 Fechar
               </button>
