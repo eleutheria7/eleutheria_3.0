@@ -164,7 +164,7 @@ const handleClosePopup = () => {
             required
             inputMode="text"
             pattern="[0-9a-zA-Z.-]*"
-            placeholder="Ex: 12345678-9"
+            placeholder="Ex: 123456789"
           />
 
           {/* Campo Data de Nascimento */}
