@@ -17,13 +17,13 @@ export default function FormularioPage() {
 
 
   const calculateAge = (birthDate: Date) => {
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const monthDiff = today.getMonth() - birthDate.getMonth();
+    const referenceDate = new Date('2025-06-20'); // <- Data limite
+    let age = referenceDate.getFullYear() - birthDate.getFullYear();
+    const monthDiff = referenceDate.getMonth() - birthDate.getMonth();
 
     if (
       monthDiff < 0 ||
-      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+      (monthDiff === 0 && referenceDate.getDate() < birthDate.getDate())
     ) {
       age--;
     }
@@ -542,7 +542,7 @@ const handleClosePopup = () => {
                 
                 <h2 className="text-lg font-bold mb-2">Formulário Enviado!</h2>
                 <p>Muito obrigado por sua inscrição!</p>
-                <p>Para concluir seu cadastro, por favor, clique no botão “Secretaria” e confira as opções de pagamento disponíveis. Estamos felizes em ter você conosco neste retiro!</p>
+                <p>Para concluir seu cadastro, por favor clique no botão abaixo e confira as opções de pagamento disponíveis. Estamos felizes em ter você conosco neste retiro!</p>
                 <p><p>Nos vemos no Eleutheria 2025!</p></p>
                 
                 {/* Botão Secretaria simples */}
@@ -552,7 +552,7 @@ const handleClosePopup = () => {
                   rel="noopener noreferrer"
                   className="mt-4 px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition inline-block"
                 >
-                  Secretaria
+                  Clique Aqui
                 </a>
               
             </div>
