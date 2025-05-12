@@ -541,9 +541,9 @@ const handleClosePopup = () => {
                   </button>
                 
                 <h2 className="text-lg font-bold mb-2">Formulário Enviado!</h2>
-                <p>Muito obrigado por sua inscrição!</p>
-                <p>Para concluir seu cadastro, por favor clique no botão abaixo e confira as opções de pagamento disponíveis. Estamos felizes em ter você conosco neste retiro!</p>
-                <p><p>Nos vemos no Eleutheria 2025!</p></p>
+                <p>Parabéns, sua inscrição foi concluída!</p>
+                <p>Tivemos uma grande procura pelo retiro e, devido ao número de inscrições, você entrou na fila de espera.</p>
+                <p><p>Caso haja alguma desistência ou surja uma nova vaga entraremos em contato com você!</p></p>
                 
                 {/* Botão Secretaria simples */}
                 <a
