@@ -73,7 +73,7 @@ export default function Header() {
             </ScrollLink>
           ))}
           <Link
-            href="/formulario"
+            href="/encerradas"
             className="bg-blue-600 text-white px-4 py-4 rounded-full hover:bg-blue-700 transition-colors text-sm font-semibold flex items-center justify-center"
           >
             INSCRIÇÕES
