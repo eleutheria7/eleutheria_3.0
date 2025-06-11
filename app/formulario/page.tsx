@@ -139,7 +139,7 @@ const handleClosePopup = () => {
 
         <form
           ref={formRef}
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde4P_3rOrXZembrQToUQKjCPJH8TDyGiC6sI1U9ln8A_pYug/formResponse"
+          action=""/*inserir o link*/
           method="POST"
           onSubmit={handleSubmit}
           className="space-y-6"
