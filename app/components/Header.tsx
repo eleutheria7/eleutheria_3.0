@@ -101,7 +101,7 @@ export default function Header() {
                 ),
               )}
               <Link
-                href="/formulario"
+                href="/encerradas"
                 className="bg-blue-600 text-white px-4 py-4 rounded-full text-sm items-center justify-center hidden"
               >
                 INSCRIÇÕES
