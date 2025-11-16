@@ -26,11 +26,11 @@ export default function EleutheriaBanner() {
             Dias 20, 21 e 22 de Junho de 2025
           </p>
           <div className="">
-            <a
+            {/*<a
               href="/encerradas"
               className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition mb-8"
             >
-              {/*INSCREVA-SE*/}
+              INSCREVA-SE*/}
             </a>
           </div>
         </div>
