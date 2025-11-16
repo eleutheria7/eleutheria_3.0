@@ -30,8 +30,8 @@ export default function EleutheriaBanner() {
               href="/encerradas"
               className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition mb-8"
             >
-              INSCREVA-SE*/}
-            </a>
+              INSCREVA-SE
+            </a>*/}
           </div>
         </div>
       </div>
