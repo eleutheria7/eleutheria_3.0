@@ -21,7 +21,7 @@ export default function Popup() {
         {/* Imagem clicável */}
         <a href="https://ordo-amoris.vercel.app" target="_blank" rel="noopener noreferrer">
           <img
-            src="/SEU-ARQUIVO-DE-IMAGEM.png"
+            src="/assets/img/OrdoAmoris.jpg"
             alt="Popup"
             className="w-[320px] h-auto cursor-pointer"
           />
