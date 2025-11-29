@@ -8,10 +8,14 @@ import PhotosCarousel from "./components/PhotosCarousel";
 import Localizacao from "./components/Localizacao";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
+import Popup from "./components/Popup";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
+      {/*Popup*/}
+      <Popup />
+      
       {/* Header */}
       <Header />
       {/* Eleutheria 2025 */}
