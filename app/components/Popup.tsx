@@ -13,7 +13,7 @@ export default function Popup() {
         {/* Botão X */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl font-bold"
+          className="absolute top-2 right-2 text-gray-600 hover:text-black text-2x1 font-bold"
         >
           ×
         </button>
